@@ -1,15 +1,32 @@
 <?php require_once('webtemplate/headtags.php'); ?>
-<?php require_once('webtemplate/header_nav.php'); ?>
-<?php require_once('webtemplate/side_navigation.php'); ?>		
-
-	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
-	<?php require_once('webtemplate/breadcrumb.php'); ?>		
-		<div class="row">
-			<div class="col-lg-12">
-				<h1 class="page-header">Dashboard</h1>
+	<div class="row">
+		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+			<div class="login-panel panel panel-default">
+				<div class="panel-heading">Log in</div>
+				<div class="panel-body">
+					<form role="form">
+						<fieldset>
+							<div class="form-group">
+								<input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="">
+							</div>
+							<div class="form-group">
+								<input class="form-control" placeholder="Password" name="password" type="password" value="">
+							</div>
+							<div class="checkbox">
+								<label>
+									<input name="remember" type="checkbox" value="Remember Me">Remember Me
+								</label>
+							</div>
+							<a href="index.html" class="btn btn-primary">Login</a>
+						</fieldset>
+					</form>
+				</div>
 			</div>
-		</div><!--/.row-->
-								
-		</div>	<!--/.main-->
+		</div><!-- /.col-->
+	</div><!-- /.row -->	
+	<script src="js/jquery-1.11.1.min.js"></script>
 
-<?php require_once('webtemplate/footer.php'); ?>	
+	<?php require_once('webtemplate/disable.php'); ?>
+		
+
+	

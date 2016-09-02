@@ -33,7 +33,8 @@
 		$(window).on('resize', function () {
 		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
 		})
-	</script>	
+	</script>
+<?php require_once('disable.php'); ?>
 </body>
 
 </html>
