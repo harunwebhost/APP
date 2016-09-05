@@ -1,8 +1,8 @@
 <div class="margin" style="min-height:200px;">.</div>
  <div class="navbar navbar-default navbar-fixed-bottom footer">
     <div class="container">
-      <p class="navbar-text pull-left">-------
-           <a href="http://tinyurl.com/tbvalid" target="_blank" >-----</a>
+      <p class="navbar-text pull-left">
+           <a href="www.promosindia.com" target="_blank" >Designed & Developed by PromosIndia Technologies</a>
       </p>
       
     

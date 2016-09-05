@@ -70,15 +70,38 @@ function convert_underscore_into_spaces($title){
 	return str_replace('_', ' ', $title);
 }
 	/*get the main pages*/
-	function select_emp($id){
+	function campaings($campaign_group_name){
 		
-			$sql="select * from crm_employer"; 
+			$sql="select * from campaigns"; 
 			$result=execute_sql_query($sql);
-			while ($emp=execute_fetch($result)) {
+			while ($campaigns=execute_fetch($result)) {
 			?>
-			<option value="<?php echo $emp['emp_id'] ?>" <?php if($emp['emp_id']==$id){echo "selected"; } ?>><?php echo $emp['emp_name']?></option>
+			<option value="<?php echo $campaigns['campaign_id'] ?>"
+             <?php if($campaigns['campaign_name']==$campaign_group_name){echo "selected"; } ?>>
+            <?php echo $campaigns['campaign_name']?></option>
 		<?php }
 	}
+
+
+    function distric_list($disctric){
+        
+            $sql="select * from districts"; 
+            $result=execute_sql_query($sql);
+            while ($districts=execute_fetch($result)) {
+            ?>
+            <option value="<?php echo $districts['district_id'] ?>"
+             <?php if($districts['district_name']==$disctric){echo "selected"; } ?>>
+            <?php echo $districts['district_name']?></option>
+        <?php }
+    }
+
+
+
+
+
+
+
+
 
 function display_data($data){
 	echo $data;
@@ -207,4 +230,31 @@ set_time_limit(0);
         }
         }
         
+        /*Updating*/
+    function get_update_records(){
+        date_default_timezone_set('Asia/Kolkata');
+        $current_time=date('Y-m-d H:i:s');  
+        $current_ip=$_SERVER['REMOTE_ADDR'];
+        $added_by=1; 
+        $update="modified_date='$current_time',modified_ip='$current_ip',modified_by='$added_by'";
+        return $update;
+        }
+
+        function get_server(){
+            date_default_timezone_set('Asia/Kolkata');
+            $current_time=date('d-m-Y H:i:s');  
+            $current_ip=$_SERVER['REMOTE_ADDR'];
+            $added_by=1;
+            $server_details="'$current_time','$current_ip','$added_by'";
+            return $server_details;
+    }
+
+    function check_isset($getvalue){
+        if(isset($getvalue)){
+            return $getvalue;
+        }else{
+            return "";
+        }
+    }
  ?>
+

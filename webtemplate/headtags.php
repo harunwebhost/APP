@@ -13,6 +13,7 @@
 <link href="../css/datepicker3.css" rel="stylesheet">
 <link href="../css/styles.css" rel="stylesheet">
 <link href="../css/mystyle.css" rel="stylesheet">
+<link href="../css/fa.css" rel="stylesheet">
 <!--Icons-->
 <script src="../js/lumino.glyphs.js"></script>
 <link href="../validation/validationEngine.jquery.css" rel="stylesheet">
@@ -21,6 +22,7 @@
 	.small{	height: 16px;
    			width: 16px;    
    			stroke-width: 3px;
+   			
    		}
 </style>
 <!--[if lt IE 9]>
