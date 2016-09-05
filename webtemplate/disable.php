@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 	$(document).bind("contextmenu",function(e) {
  		e.preventDefault();
 		});
@@ -10,4 +10,4 @@
 	});
 	</script>	
 
-
+ -->
