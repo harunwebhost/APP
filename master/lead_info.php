@@ -49,8 +49,8 @@
 						        <th data-field="lead_address" data-sortable="true">Address</th>
 						        <th data-field="source_of_lead" data-sortable="true">Campain</th>
 						        <th data-field="district_name" data-sortable="true">Distric Name</th>
-						        <th data-field="edit" data-sortable="true">Action</th>
-						        <th data-field="edit" data-sortable="true">Transfer</th>
+						        <th data-field="Action" data-sortable="true">Action</th>
+						        <th data-field="Transfer" data-sortable="true">Transfer</th>
 
 						    </tr>
 						    </thead>

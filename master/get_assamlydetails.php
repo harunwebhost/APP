@@ -5,7 +5,7 @@ if(!empty($_POST["district_id"])) {
 	$query ="SELECT * FROM assemblis WHERE district_id = '" . $_POST["district_id"] . "'";
 	$results = execute_sql_query($query);
 ?>
-	<option value="">Select State</option>
+	<option value="">Select Assemblis</option>
 <?php
 	foreach($results as $assemblis) {
 ?>

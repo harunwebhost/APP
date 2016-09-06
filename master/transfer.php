@@ -174,7 +174,7 @@
 			$(document).ready(function(){
 				$("#district_name").change(function(){
 					district_id=$("#district_name").val();
-					alert(district_id);
+					
 					$.ajax({
 						type	: 	'POST',
 						data 	: 	'district_id='+district_id,
